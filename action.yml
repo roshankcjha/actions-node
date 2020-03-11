@@ -23,3 +23,8 @@ jobs:
         run: npx exoframe -u -e https://exoframe.codezen.net -t $EXO_TOKEN
         env:
           EXO_TOKEN: ${{ secrets.EXO_TOKEN }}
+          
+          
+- name: github-action-tester
+  uses: skx/github-action-tester@release-0.10
+
