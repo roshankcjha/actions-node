@@ -17,9 +17,9 @@ jobs:
       - name: install
         run: |
           yarn install
-      - name: build
+      - name: build.yml
         run: yarn build
-      - name: deploy
+      - name: deploy.yml
         run: npx exoframe -u -e https://exoframe.codezen.net -t $EXO_TOKEN
         env:
           EXO_TOKEN: ${{ secrets.EXO_TOKEN }}
